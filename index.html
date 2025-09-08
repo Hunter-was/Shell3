@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1 style="text-align:center;font-family:verdana;">How to 		Make a Minecraft Resource Pack?</h1>
+			<p style="text-align:center;font-family:verdana;">Written by: Rowan Kehoe</p>
+            <p style="text-align:center;font-size:10px;">If you have any questions or want a 2nd thought on your pack email me here: <a href="https://mail.google.com/mail/u/3/#inbox?compose=GTvVlcSKjDXdzWbhpXPpxdqlRDrnQQbbwzKCLKkNRNqTQzXJGBvHmVpXmFdGscZSDbGBLZVHVpWQf" target="_blank">rshell3business@gmail.com</a></p>
+      <br>
+	<p style="text-indent: 30px;">Are you trying to make a <strong>Minecraft Resource Pack </strong>but just can't figure it out? This article will help you do just that.</p>
+<br>
+<p>For this tutorial, you can use this <a href="DOWNLOADLINK">Resource Pack Template.</a> It will not affect anything if you use your own, but this report will be directed towards it.
+<br>
+<p>Resource Packs work in a very simple way, there is the<br> <strong>MAIN FOLDER (NAME OF PACK)</strong><br>which includes a json (JavaScript Object Notation) file, and the assets folder. Most aspects are changed in the assets folder. Anything in the assets folder in the resource pack will overide anything in the base Minecraft pack.</p>
+		<p>If you are creating a pack, then start with a base folder, for understanding purposes, it will be reffered to as "ShellPack". The name wont be shown in game, only in the files. Inside of ShellPack, there should be 3 files. These include:</p>
+        <li>assets (folder)
+        <li>pack.mcmeta (json)
+        <li>pack.png (png)
+       <p>We will start with the pack.png. This is the image shown on the resource pack in the resource pack selection menu.</p>
+       <img src="IMAGEOFRESOUCEPACKSCREEN" alt="[<IMAGE CANNOT LOAD CURRENTLY>]"
+       <br>
+       <p>Take whatever image that you wish to display, and drag it into ShellPack. Rename it to "pack.png". Images should be square and render best if the resolution is 512x512 or less but it shouldn't be a problem. (if there is a problem, try to keep the resolution of a power of 2)</p>
+       
+        <li>assets (folder)
+        <li>pack.mcmeta (json)
+        <li><del>pack.png (png)</del>
+        
+        <p>pack.mcmeta will be next. To start, create a new text document. (Windows - rightclick, then choose "New" -> 'Text Document') Now open it. This should already be in the template pack. paste this code:</p>
+         <pre><code>{
+  "pack": {
+    "pack_format": 64,
+    "description": "RESOURCE PACK DESCRIPTION"
+  },
+}</code></pre>
+
+<p>Now, where the code says '"pack_format":64,' change the 64 to the corresponding pack format.You can find the format <a href=https://minecraft.wiki/w/Resource_pack#History>here.</a>format '64' is for ~ Java 1.21.7 . The code has a bit of writing "RESOURCE PACK DESCRIPTION" Just change the description to your desired description. This will show in game:</p>
+
+	<img src="IMAGEOFRESOUCEPACKSCREENWITHDESCRIPTION" alt="[<IMAGE CANNOT LOAD CURRENTLY>]">
+    
+    <br>
+    	<br>
+     	<li>assets (folder)
+        <li><del>pack.mcmeta (json)</del>
+        <li><del>pack.png (png)</del>
+        
+   <p>Your folder and code should look like this:</p>
+   <img src="IMAGEOFFILESANDCODE" alt="[<IMAGE CANNOT LOAD CURRENTLY>]">
+    
+   <p> Now that the easy stuff is out of the way, we can move onto the actual resource packs.</p>
+       
+      
+
+</body>
+</html>
+    
