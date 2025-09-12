@@ -1,1 +1,139 @@
-PLACEHOLDER
+<!DOCTYPE html>
+<html>
+  <body>
+    <h1 style="text-align:center;font-family:verdana;">
+      <em>How to Make a Minecraft Resource Pack</em>
+    </h1>
+
+    <p style="text-align:center;font-family:verdana;">
+      Written by: Rowan Kehoe
+    </p>
+
+    <p style="text-align:center;font-size:10px;">
+      If you have any questions or want a 2nd thought on your pack email me here: 
+      <a href="https://mail.google.com/mail/u/3/#inbox?compose=GTvVlcSKjDXdzWbhpXPpxdqlRDrnQQbbwzKCLKkNRNqTQzXJGBvHmVpXmFdGscZSDbGBLZVHVpWQf" target="_blank">
+        rshell3business@gmail.com
+      </a>
+    </p>
+
+    <p style="text-indent: 30px;">
+      Are you trying to make a <strong>Minecraft Resource Pack </strong>but just can't figure it out? 
+      This guide will help you learn step by step.
+    </p>
+
+    <p>
+      For this tutorial, I recommend using this <a href="DOWNLOADLINK">Resource Pack Template.</a> 
+      It will not affect anything if you use your own, but this guide will refer to the template.
+    </p>
+
+    <p>
+      Resource packs are folders with 3 main elements in them. They include the following:<br>
+      <li>assets (folder)<br>
+      <li>pack.mcmeta (JSON file)<br>
+      <li>pack.png (PNG)<br>
+      <br>
+      The assets folder has the changes to the vanilla game, any block textures or entity models will be changed in this folder.<br>
+      <br>pack.mcmeta decides the structure of the pack, it has details about the pack format, and the pack description, this is the only nessacary file Minecraft needs in order to indentify it as a resource pack. <br><br>Finally, pack.png is the image that the pack displays on the resource pack menu.
+    </p>
+
+    <p>
+      If you're creating a pack, then start with a base folder, name it whatever you like. 
+      The name won’t be shown in-game, only in your file folder.
+      Inside of this folder, we will create the resource pack folder, which will be our resource pack. This will show up in-game. For understanding purposes, I will refer to our pack as "ShellPack". 
+      Inside of ShellPack, there should be 3 files. These include:
+    </p>
+
+    <ul>
+      <li>assets (folder)</li>
+      <li>pack.mcmeta (json)</li>
+      <li>pack.png (png)</li>
+    </ul>
+
+    <p>
+      We will start with the pack.png. Remember, this is the image shown in the resource pack selection menu. You do not need this if you don't want to add it, there will be a default image displayed.
+    </p>
+
+    <p>
+      Take whatever image that you wish to display, and drag it into ShellPack.
+      Rename it to "pack.png". Images should be square. They render best if the resolution is around 512x512 but can go as high as you like.
+    </p>
+       
+       <img src="https://hunter-was.github.io/Rowan-stock-image-page/Shell3MCRPIMG" alt="[<IMAGE CANNOT LOAD CURRENTLY>]" style="width:512px;height:288px;"><br>
+<em>*(default pack) image shown in resource pack selection window</em><br>
+       
+        <li>assets (folder)
+        <li>pack.mcmeta (json)
+        <li><del>pack.png (png)</del>
+        
+        <p>pack.mcmeta will be next. To start, create a new text document. Open this in notepad (windows). This is already in the template pack. paste this code:</p>
+         <pre><code>{
+  "pack": {
+    "pack_format": 64,
+    "description": "RESOURCE PACK DESCRIPTION"
+  },
+}</code></pre>
+
+<p>Where the code says '"pack_format":64,' change the 64 to the corresponding pack format.You can find the format <a href=https://minecraft.wiki/w/Resource_pack#History>here.</a>format '64' is for ~ Java 1.21.7 . Where the code reads: "RESOURCE PACK DESCRIPTION", change it to whatever description you desire.</p>
+
+	<img src="https://hunter-was.github.io/Rowan-stock-image-page/Shell3MCRPDES" alt="[<IMAGE CANNOT LOAD CURRENTLY>]" style="width:512px;height:288px;"><br>
+<em>*description in resource pack selection window</em><br>
+    
+    <br>
+    	<br>
+     	<li>assets (folder)
+        <li><del>pack.mcmeta (json)</del>
+        <li><del>pack.png (png)</del>
+        
+   <p>Your folder and code should look like this:</p>
+   <img src="IMAGEOFFILESANDCODE" alt="[<IMAGE CANNOT LOAD CURRENTLY>]">
+    
+   <p> Now that the easy stuff is out of the way, we can move onto the actual resource packs. Open your assets folder, this should contain ‘minecraft’ (folder),now, inside of this folder, there will be our 13 main sections of our pack, these will all be folders. If you are using the template, they are all there and should list:</p>
+       	<br>
+		<input type="checkbox"> atlases </input><br>
+		<input type="checkbox"> blockstates </input><br>
+		<input type="checkbox"> equipment </input><br>
+        <input type="checkbox"> font </input><br>
+        <input type="checkbox"> items </input><br>
+        <input type="checkbox"> lang </input><br>
+        <input type="checkbox"> models </input><br>
+        <input type="checkbox"> particles </input><br>
+        <input type="checkbox"> post_effect </input><br>
+        <input type="checkbox"> shaders </input><br>
+        <input type="checkbox"> texts </input><br>
+        <input type="checkbox"> textures </input><br>
+        <input type="checkbox"> waypoint_style </input><br>
+      
+<p>Of course, the folders only need to be present if you are changing that folder. If I want to change a particle, I won't need to add the 'textures' folder. Really, to make a resource pack, the only file you need is pack.mcmeta, which will do nothing except let you use it as a resource pack.</p>
+	<br>
+<p>Now, as I highly recommend starting with the template pack,I will still go over this folder structure. If you have the template, you should skip this part. This section will be written in red text.</p>
+<br>
+<p style="color:red;">Some folders have subfolders and some do not. This will focus on the folders that do. These include: Font, Models, Shaders, Textures. (FMST)<br>   The sub folder inside of 'font' is named 'include'. The subfolders inside of 'Models' are 'block' and 'item'. Inside of 'shaders', there should be folders consisting of 'core', 'include', and 'post'. Textures contains the most sub folders, so many, that it would be so much better to just use the template. I cannot list them all here so I you can find a <a href="https://docs.google.com/document/d/1CN3-cE16dJXEH6iYpy2313dDx3HW0RiVjBJbAcHKi-E/edit?usp=sharing" target="_blank">google document here </a>for direction and a <a href=https://drive.google.com/file/d/15iLTVncs-hKF8dV2Uuv0o-GcJJ16xLYG/view?usp=sharing" target="_blank">pdf file here.</a><br>This is the full file structure.</p>
+<br>
+
+<p>Finally after all of the formatting we can learn about making the pack. Let's go over the parts of the pack and different things that we can do. First, it will be very helpful if you can go to your Minecraft 'versions' folder, click on the version that you are making the pack for, and unzip the .jar file. This should be a replica of your template pack, but with the files already in it. Technically, you can use this as a template resource pack, but I would recommend just having it open to the side as a reference so that it doesn't take up so much space, possibly slowing down a lesser computer.<br>   Let's assume that you want to change the look of a block. Specifically, the oak log. You can find the original texture in the root textures/block/oak_log . This is a png file of the sides of the oak_log. If you want to change it, import a new png image of the texture you want into your resource pack's texture/block folder. Then name it <strong>"oak_log"</strong>. You may also notice that there is another texture adjacent to the oak_log, oak_log_top, yes, there are more than one texture. This is because the oak log doesn't have the same texture on all sides. To change this one, do the same adding your desired png image to your resource pack's textures/block folder, but rename it to <strong>"oak_log_top"</strong><br>  Now things should start to add up. Let's move on to another aspect that we want to change, maybe a painting. For this we'll go to textures/painting. Maybe we want a funny image to display instead of a normal painting to prank a friend. For example, if you wanted to change the painting "bomb", you would add your image in the same directory, name it bomb or bomb.png (depends on software, same with any other file, just name it whatever it is labeled, although it should work either way.)<br>Why don't we try something more exciting? Maybe I, as an inside joke, want to call creepers bombers or something. How can we do that? This is where things get interesting in your minecraft files, open lang/en_us.json. Open this in the notepad app if you are on windows. You may have a seizure because you have never seen so many words, but thank god that it is alphabetized. Basically, these are all the language files. 'Lang' is short for this. Scroll down until you get to the "e"s. Now find entity.minecraft. This shouldn't take a long time. Look around until you find the creeper. The line should match this:<br>  "entity.minecraft.creeper": "Creeper",<br>To change this, we need to change the "Creeper" on the right side of the script. The left side describes it in the way that the files know it as, and the right side will describe it in-game. In the lang folder in your resource pack, add a text document called en_us.json. Now put a left brace on the first line and a right brace on the second line<br> {<br>}<br> Just like that. <br>In the centre will be our code. Write:"entity.minecraft.creeper": "Bomber",<br>You now have a resource pack that changes Creepers to Bombers! But maybe that's not enough. When a creeper hisses, when it's about to explode, the subtitles will say creeper, not bomber, so we can fix that in the lines:<br> "subtitles.entity.creeper.death": "Creeper dies",<br>
+  "subtitles.entity.creeper.hurt": "Creeper hurts",<br>
+  "subtitles.entity.creeper.primed": "Creeper hisses",<br>
+  We'll just change it to:<br>"subtitles.entity.creeper.death": "Bomber dies",<br>
+  "subtitles.entity.creeper.hurt": "Bomber hurts",<br>
+  "subtitles.entity.creeper.primed": "Bomber hisses",<br>
+  Now that would be the end of it, but what if you die from a creeper, it will say:<br> "PLAYERNAME was blown up by a Creeper"<br>To fix this, we'll change the lines:<br>"death.attack.creeper": "%1$s was blown up by a Creeper",
+  "death.attack.creeper.player": "%1$s was blown up by a Creeper whilst fighting %2$s"<br> We'll make it:<br>"death.attack.creeper": "%1$s was blown up by a Bomber",
+  "death.attack.creeper.player": "%1$s was blown up by a Bomber whilst fighting %2$s"<br>
+  BUT EVEN THAT'S NOT ENOUGH. WE MUST DO MORE! But let's test you. What if we want the spawn egg of a Creeper to be renamed. Try it yourself and then come back.
+ <br>
+ <br>
+ <br>
+ Are you done? Or did you give up? We'll here's the answer anyway:<br>
+ Go to "item.minecraft.creeper_spawn_egg": "Creeper Spawn Egg",<br>
+ Then change it to:<br>
+"item.minecraft.creeper_spawn_egg": "Bomber Spawn Egg",
+<br>
+Finally, your resource pack should be done. This was a short tutorial for Minecraft Resource Packs, I hope you learned something and create your own resource packs. Thank you for reading and if you would like to watch a video tutorial, it will be linked below! If you have any questions, revisions, need feedback, or just want to send me your packs, email them to me at rshell3buisness@gmail.com! Also feel free to email and tell me your opinion on this tutorial and if you learned something. Thank you!
+
+<a href="VIDEO LINK">Video Here</a>  
+</p>
+
+</body>
+</html>
+    
+
